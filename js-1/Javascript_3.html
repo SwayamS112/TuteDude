@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle{
+            height: 130px;
+            width: 130px;
+            border-radius: 50%;
+            float: left;
+            margin-right: 50px;
+        }
+            #red{
+                background: red;
+            }
+            #blue{
+                background: blue;
+            }
+            #green{
+                background: green;
+            }
+       
+    </style>
+</head>
+<body>
+    <p id="para">This is para 1</p>
+    <button id="btn">Change Color</button>
+    <button id="btn2">Size</button> <br><br>
+    <div class="circle" id="red"></div>
+    <div class="circle" id="green"></div>
+    <div class="circle" id="blue"></div>
+    
+   <script>
+        const btn = document.querySelector("#btn")
+        const btn2 = document.querySelector("#btn2")
+        btn.onclick = function(){
+            document.getElementById("para").style.color='red'
+        }
+
+        btn2.onclick = function(){
+            document.querySelector("#para").style.fontSize = "50px"
+        }
+
+        document.querySelector("#red").onclick = function(){
+            document.querySelector("#red").style.display="none"
+        }
+
+        document.querySelector("#green").onclick = function(){
+            document.querySelector("#green").style.display="none"
+        }
+
+        document.querySelector("#blue").onclick = function(){
+            document.querySelector("#blue").style.display="none"
+        }
+   </script>
+
+</body>
+</html>

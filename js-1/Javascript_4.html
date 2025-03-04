@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp1">
+     <button id="btn1">submit</button>
+     <p id="para1">this is para 1</p>
+
+     <script>
+    document.querySelector("#btn1").onclick = function(){
+        var val = "";
+        val=document.querySelector("#inp1").value;
+        document.querySelector("#para1").innerHTML = val;
+    }
+     </script>
+</body>
+</html>

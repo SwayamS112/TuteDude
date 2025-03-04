@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para1">Javascript is</p>
+   <p id="para2"></p>
+   <button id="add">Click Me</button>
+   <button id="add2">Btn2</button>
+    <script>
+document.querySelector("#add2").onclick = function(){
+    document.querySelector("#para2").innerHTML = "<h2> Hi i added para from js </h2>"
+}
+
+document.querySelector("#add").onclick = function(){
+    document.querySelector("#para1").innerHTML = "I think " + document.querySelector("#para1").innerHTML;
+}
+
+// document.querySelector("#add").onclick = function(){
+// document.querySelector("#para1").innerHTML= document.querySelector("#para1").innerHTML + " awesome";
+// }
+    </script>
+</body>
+</html>

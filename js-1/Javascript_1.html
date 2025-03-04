@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <body>
+    <!-- adding inline js inside button ||| but not recommended-->
+
+<button id="btn1" onclick="alert('Button clicked') ">Click Me using inline js</button> 
+<button id="btn2">Click me using script tag</button>
+<button id="para">Hi my name is swayam</button>
+
+<script>
+    const btn2 = document.querySelector('#btn2')
+    btn2.addEventListener("click",function(){
+        alert("button clickerd")
+    })
+
+
+const para = document.querySelector("#para")
+para.addEventListener("click",function(){
+    alert("button clicked")
+    para.innerHTML = "I am Himachali"
+})
+
+/*
+const para =document.querySelector("#para")
+para.onclick = function(){
+para.innerHTML = "I am Himachali"
+}
+*/
+
+</script>
+</body>
+</html>
