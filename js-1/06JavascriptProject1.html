@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>Random Number Guessing Game</title>
+</head>
+<body>
+    <H1>Guess the number</H1>
+<input type="number" id="input" placeholder="Enter your number">
+<button id="btn1">Submit</button>
+    <script>
+document.querySelector("#btn1").onclick = function(){
+   const userAns =  document.querySelector("#input").value;
+   const num = Math.floor(Math.random()*5)+1
+   if(userAns == num){
+    alert("U won")
+   }
+   else{
+    alert("Try again")
+   }
+console.log(userAns);
+console.log(num);
+}
+
+    </script>
+</body>
+</html>
