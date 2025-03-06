@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Document</title>
+</head>
+<body>
+    <label for="text">Enter your Text</label>
+    <input type="text" id="text">
+    <p id="print"></p>
+    <button id="submit">Submit</button>
+    <script>
+        document.querySelector("#submit").onclick = function(){
+const text = document.querySelector("#text").value;
+const  number1 = text.length;
+document.querySelector("#print").innerHTML = `Length of the text is ` + number1;
+}
+    </script>
+</body>
+</html>
