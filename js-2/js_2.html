@@ -6,7 +6,29 @@
 <body>
     
     <script>
+function alerting(){
+    alert("HI Welcome!!")
+}
 
-    </script>
+function add(a,b,c){
+    const sum = a+b+c;
+    // alert(sum);
+    return sum
+}
+// alert(add(2,3,4));
+
+var person ={
+    firstName: "Swayam",
+    lastName: "Sood",
+    age: "21",
+    city: "Baddi",
+    fullName: function(){   // this is method inside object
+return this.firstName + " " + this.lastName;
+    }
+};
+
+alert(person.firstName);
+alert(person.fullName());
+</script>
 </body>
 </html>
