@@ -1,0 +1,22 @@
+1. mongosh -> to start the mongodb shell in command prmopt
+2. show dbs -> to check the databases created on the mongodb
+3. show collections -> shows the collections currently selected in databases
+4. use shop -> it automatically creates a db (if not exists) name shop and insert the next data which i pass
+
+CRUD OPERATIONS 
+C-> create
+R-> Read
+U-> Update
+D-> Delete
+        |-> collection name
+5. db.Items.insertOne({name:"swayam",age:21}) -> it create a collection inside the shop db and add the given data
+6. db.Items.find() -> returns a array of object with the all the data inside the Items collection
+7. db.Items.find({name:"swayam"}) -> returns a array of object with the data of the same name as in passed inside it
+8. db.Items.updateOne({name:"swayam"},{$set:{name:"Swayam Sood"}}) -> updates the db collections name whoes is only swayam change to swayam
+    updateOne  -> first match will gets update
+    updateMany -> all matches will get updates
+    replaceOne -> first match replaces the entire document (except _id) that matches the filter.
+
+9. db.Items.replaceOne({name:"vanshika"},{name:"vanshika",age:21,gender:"female"})
+10.db.Items.deleteOne({name:"Honey"}) -> to delete the first recoard from the collection of same value given in function
+11. db.Items.deleteMany({name:"Honey"}) -> it Deletes all the collenctions with name Honey
