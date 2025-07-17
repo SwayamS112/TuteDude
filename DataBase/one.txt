@@ -1,0 +1,22 @@
+db.Items.insertOne({
+    id:100,
+    name: "Eraser",
+    price: 100,
+    reviews: [
+        {
+            authorname: "Swayam",
+            age:21,
+            rating: 5
+        },
+        {
+            authorname: "vanshika",
+            age:19,
+            rating: 7
+        },
+        {
+            authorname: "Ghost",
+            age: "NA",
+            rating: "NA"
+        }
+    ]
+})
